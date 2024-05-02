@@ -101,6 +101,7 @@ puts ""
 # Query the cast data and loop through the results to display the cast output for each movie.
 # TODO!
 
+Movie.destroy_all
 
 puts "there are #{Movie.all.count} movies" 
 
@@ -112,5 +113,27 @@ new_movie ["rated"] = "PG=13"
 new_movie ["studio_id"] = "Warner Bros."
 p new_movie 
 new_movie.save
+
+puts "there are #{Movie.all.count} movies" 
+
+theDarkKnight = Movie.new
+p theDarkKnight 
+theDarkKnight ["title"] = "The Dark Knight"
+theDarkKnight["year released"] = "2008"
+theDarkKnight ["rated"] = "PG-13"
+theDarkKnight ["studio_id"] = "Warner Bros."
+p theDarkKnight
+theDarkKnight.save
+
+puts "there are #{Movie.all.count} movies" 
+
+darkknightrises = Movie.new
+p darkknightrises
+darkknightrises ["title"] = "Dark Knight Rises"
+darkknightrises ["year released"] = "2013"
+darkknightrises ["rated"] = "PG-13"
+darkknightrises ["studio_id"] = "Warner Bros."
+p darkknightrises
+darkknightrises.save
 
 puts "there are #{Movie.all.count} movies" 
