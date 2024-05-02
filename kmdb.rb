@@ -100,3 +100,13 @@ puts ""
 
 # Query the cast data and loop through the results to display the cast output for each movie.
 # TODO!
+
+favorite_food = "tacos"
+puts favorite_food
+
+class createThings < ActiveRecord: :migration
+    def change
+        create_table :things do |t|
+            t.string "actor"
+            t.integer "name"
+            
