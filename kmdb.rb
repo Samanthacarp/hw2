@@ -295,3 +295,14 @@ p begins_cast
 
 
 for movie_id in role
+for studio_id in role 
+for character_name in role
+
+for title in movie
+for year released in movie
+for rated in movie
+for studio_id in movie
+
+for name in studio
+
+for name in actor
