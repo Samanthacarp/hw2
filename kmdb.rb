@@ -259,3 +259,15 @@ p gary
 gary.save
 
 puts "there are #{Actor.all.count} actors"
+
+all_actors = Actor.all
+p all_actors
+
+all_studios = Studio.all
+p all_studios
+
+all_roles = Role.all
+p all_roles 
+
+all_movies = Movie.all
+p all_movies
