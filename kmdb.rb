@@ -271,3 +271,27 @@ p all_roles
 
 all_movies = Movie.all
 p all_movies
+
+batmanbegins_movies = Movie.where({"title" => "Batman Begins"}) 
+p batmanbegins_movies
+
+batmnanbegins = Movie.find_by ({"title" => "Batman Begins"}) 
+p batmnanbegins ["title"]
+batmanbegins.save
+
+darkknight = Movie.find_by ({"title" => "The Dark Knight"})
+p darkknight ["title"]
+darkknight.save
+
+darkknightrises = Movie.find_by ({"title" => "Dark Knight Rises"})
+p darkknightrises ["title"]
+darknightrises.save
+
+dark_cast = Actor.find_by ({"character_name" = "Rachel Dawes"}) 
+p dark_cast
+
+begins_cast = Actor.find_by ({"character_name" = "Bruce Wayne"})
+p begins_cast
+
+
+for movie_id in role
