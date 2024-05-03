@@ -102,6 +102,9 @@ puts ""
 # TODO!
 
 Movie.destroy_all
+Role.destroy_all
+Studio.destroy_all
+Actor.destroy_all
 
 puts "there are #{Movie.all.count} movies" 
 
@@ -137,3 +140,122 @@ p darkknightrises
 darkknightrises.save
 
 puts "there are #{Movie.all.count} movies" 
+
+puts "there are #{Role.all.count} roles" 
+
+brucewayne = Role.new
+p brucewayne
+brucewayne ["movie_id"] =  "1"
+brucewayne ["actor_id"] = "1"
+brucewayne ["character_name"] = "Bruce Wayne"
+p brucewayne
+brucewayne.save
+
+puts "there are #{Role.all.count} roles" 
+
+puts "there are #{Role.all.count} roles" 
+
+alfred = Role.new
+p alfred
+alfred ["movie_id"] =  "1"
+alfred ["actor_id"] = "2"
+alfred ["character_name"] = "alfred"
+p alfred
+alfred.save
+
+
+puts "there are #{Role.all.count} roles" 
+
+ragul = Role.new
+p ragul
+ragul ["movie_id"] =  "1"
+ragul ["actor_id"] = "3"
+ragul ["character_name"] = "Ra's Al Ghul"
+p ragul
+ragul.save
+
+puts "there are #{Role.all.count} roles" 
+
+puts "there are #{Role.all.count} roles" 
+
+rachel = Role.new
+p rachel
+rachel ["movie_id"] =  "1"
+rachel ["actor_id"] = "4"
+rachel ["character_name"] = "Rachel Dawes"
+p rachel
+rachel.save
+
+puts "there are #{Role.all.count} roles" 
+
+puts "there are #{Role.all.count} roles" 
+
+comissioner = Role.new
+p comissioner
+comissioner ["movie_id"] =  "1"
+comissioner ["actor_id"] = "1"
+comissioner ["character_name"] = "Comissioner Gordon"
+p comissioner
+comissioner.save
+
+puts "there are #{Role.all.count} roles" 
+
+puts "there are #{Studio.all.count} studios" 
+
+warner= Studio.new
+p warner
+warner ["name"] =  "Warner Bros"
+p warner
+warner.save
+
+puts "there are #{Studio.all.count} studios" 
+
+puts "there are #{Actor.all.count} actors" 
+
+christian= Actor.new
+p christian 
+christian ["name"] =  "Christian Bale"
+p christian
+christian.save
+
+puts "there are #{Actor.all.count} actors" 
+
+puts "there are #{Actor.all.count} actors" 
+
+michael= Actor.new
+p michael 
+michael ["name"] =  "Michael Caine"
+p michael
+michael.save
+
+puts "there are #{Actor.all.count} actors"
+
+puts "there are #{Actor.all.count} actors" 
+
+liam= Actor.new
+p liam 
+liam ["name"] =  "Liam Neeson"
+p liam
+liam.save
+
+puts "there are #{Actor.all.count} actors"
+
+puts "there are #{Actor.all.count} actors" 
+
+katie= Actor.new
+p katie 
+katie ["name"] =  "Katie Holmes"
+p katie
+katie.save
+
+puts "there are #{Actor.all.count} actors"
+
+puts "there are #{Actor.all.count} actors" 
+
+gary= Actor.new
+p gary 
+gary ["name"] =  "Gary Oldman"
+p gary
+gary.save
+
+puts "there are #{Actor.all.count} actors"
